@@ -5,7 +5,6 @@ import Header from "@/components/layouts/header/header";
 import { ThemeProvider } from "@/providers/theme-provider";
 import Footer from "@/components/layouts/footer";
 import { Toaster } from "@/components/ui/toaster";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -19,8 +18,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "ckziu1 - 2LL1",
-  description: "student app",
+  title: "math-function-elem",
+  description: "math function display app",
 };
 
 export default function RootLayout({
@@ -41,7 +40,6 @@ export default function RootLayout({
         >
           <Header />
           <main>{children}</main>
-          <SpeedInsights />
           <Toaster />
           <Footer />
         </ThemeProvider>
