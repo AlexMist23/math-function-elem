@@ -3,8 +3,7 @@ import Link from "next/link";
 import NavLinks from "./nav-links";
 import ThemeButton from "../../theme/theme-button";
 import DropButton from "./drop-button";
-import UserButton from "../../auth/user-button";
-import AdminPanelButton from "../../auth/admin-panel-button";
+
 import IconCkziu1Logo from "@/components/icons/ckziu1-logo";
 
 export default function Header() {
@@ -26,9 +25,7 @@ export default function Header() {
           </Link>
           <NavLinks className="hidden gap-4 md:flex" />
           <div className="flex items-center gap-4 ml-auto">
-            <AdminPanelButton />
             <ThemeButton className="hidden md:flex" />
-            <UserButton />
           </div>
         </div>
       </header>
